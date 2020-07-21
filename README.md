@@ -8,9 +8,12 @@
 ---
 
 this bot is made by tkt0506 , you can use this freely :) 
+
 if you have any problem , you can contact me! 
 my Youtube channel : [https://www.youtube.com/channel/UCeFtECVoP1XLwoH9kopKD6w](https://www.youtube.com/channel/UCeFtECVoP1XLwoH9kopKD6w)
+
 my Discord channel : [https://discord.com/invite/rVYhBdp](https://discord.com/invite/rVYhBdp)
+
 my Telegram account : i am finding the link sry 
 
 ---
