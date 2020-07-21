@@ -1,5 +1,9 @@
 import discord 
 from discord.ext import commands 
+import json 
+import random as r
+
+
 
 bot = commands.Bot(command_prefix='[')
 
@@ -27,4 +31,34 @@ async def ping(ctx):
 async def round_ping(ctx):
     await ctx.send(f"{round(bot.latency*1000)}(ms)")
 
+@bot.command()
+async def dice(ctx):
+    player_point=r.randint(1,6)
+    bot_point=r.randint(1,6)
+    await ctx.send(f'{ctx.author} dice **{player_point}** \n gay ryan dice **{bot_point}**')
+    if(player_point>bot_point):
+        await ctx.send(f'you win!')
+    elif(player_point<bot_point):
+        await ctx.send(f'you lose hahahaha')        
+
+@bot.command()
+async def sub(ctx):
+    player_sub=r.randint(1,6)
+    if(player_sub == 1):
+        await ctx.send(f'{ctx.author} , you can subscribe **just go travel** ! \n "own the world without travel!"  \n link: https://www.youtube.com/channel/UCazYt7aApTjNOkPtacztKhg ')
+    elif(player_sub == 2):
+        await ctx.send(f'want to watch rubbish video? \n {ctx.author} ,  **tkt0506** is a suck channel for you! \n link: https://www.youtube.com/channel/UCeFtECVoP1XLwoH9kopKD6w ')    
+    elif(player_sub == 3):
+        await ctx.send(f'looking forward to watch Brawl Stars hack? \n{ctx.author} , go watch  **professor yeung** ~ \n link: https://www.youtube.com/channel/UCVF-qjWp7xWQkHQXh9rv_wA ')
+    elif(player_sub == 4):
+        await ctx.send(f'csgo or roblox? {ctx.author} , **dizziryhos** is a ~~gay~~ (just kidding) ! \n link: https://www.youtube.com/channel/UC39KTv488nBhHLOG3LajvYw ') 
+    elif(player_sub == 5):
+         await ctx.send(f'{ctx.author} , you can subscribe **Wiley** ! \n link: sry Wiley i lost it QAQ ') 
+    elif(player_sub == 6): 
+         await ctx.send(f'{ctx.author} , you can do not subscribe **gundam** ! \n link: i forgot as i did not subscribe hahaha ') 
+
+@bot.command()
+async def helpme(ctx):
+    await ctx.send(f'hello {ctx.author} , i have ~~not~~ many fuction \n type **[sub** to know what you can watch \n type **[dice** to play with my with a dice \n type **[ping** to know my ping , also you can type **[round_ping** to round off the ping \n if you have any problem , you can contact @tkt0506 !')         
+         
 bot.run('NzM1MDU0MDk5NDAxMTQ2NDMw.Xxa4Rw.JUek-FXhs9cYi0sbpGvqY_M1Wrc')   
