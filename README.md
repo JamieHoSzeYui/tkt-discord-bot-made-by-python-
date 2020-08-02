@@ -14,7 +14,7 @@ want to know more , go to the function are :)
 ### 24 hour online
 my bot now can 24 hour online !!!!! 
 I use the UptimeRobot to monitor my bot, it works ! 
-link : [uptimerobot.com](uptimerobot.com)
+link : [uptimerobot.com](https://www.uptimerobot.com)
 
 
 
