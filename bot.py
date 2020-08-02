@@ -2,6 +2,11 @@ import discord
 from discord.ext import commands 
 import json 
 import random as r
+import math
+import urllib.parse
+import re
+import urllib.request
+
 
 
 
@@ -60,5 +65,35 @@ async def sub(ctx):
 @bot.command()
 async def helpme(ctx):
     await ctx.send(f'hello {ctx.author} , i have ~~not~~ many fuction \n type **[sub** to know what you can watch \n type **[dice** to play with my with a dice \n type **[ping** to know my ping , also you can type **[round_ping** to round off the ping \n if you have any problem , you can contact @tkt0506 !')         
-         
-bot.run('NzM1MDU0MDk5NDAxMTQ2NDMw.Xxa4Rw.JUek-FXhs9cYi0sbpGvqY_M1Wrc')   
+
+@bot.command()
+async def test(ctx , arg):
+    await ctx.send(arg)
+
+@bot.command()
+async def add(ctx , a:int):
+  await ctx.send( a * 2 )
+
+@bot.command()
+async def dectobin(ctx , a:int):
+  answer = bin( a )
+  await ctx.send(f'the answer is **{answer}**')
+
+@bot.command()
+async def dectohex(ctx , a : int):
+  answer = hex( a )
+  await ctx.send(f'the answer is **{answer}**')
+
+@bot.command()
+async def youtube(ctx , *, search):
+    query_string = urllib.parse.urlencode({
+        'search_query' : search
+    })
+    htm_content = urllib.request.urlopen(
+        'https://www..youtube.com/results?' + query_string
+    )
+    search_results = re.findall('href=\"\\/watch\\?v=(.{11})' , htm_content.read().decode())
+    await ctx.send('https://www.youtube.com/watch?v=' + search_results[0])
+
+       
+bot.run('NzM1MDU0MDk5NDAxMTQ2NDMw.XxaqeQ.UkTo-RCUdzNcYChHaZArI3BAalQ')   

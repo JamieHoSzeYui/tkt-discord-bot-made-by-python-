@@ -1,5 +1,24 @@
-# tkt discord bot 
-## still working but atleast no bug :D 
+# tkt0506 discord bot version 2 
+# working but hv some bug (the command that are testing)
+# free to use 
+
+---
+
+## latest update 
+
+---
+version :20-08-01
+
+### add [help , [dectobin , [dectohex , [test command 
+want to know more , go to the function are :)
+### 24 hour online
+my bot now can 24 hour online !!!!! 
+I use the UptimeRobot to monitor my bot, it works ! 
+link : [uptimerobot.com](uptimerobot.com)
+
+
+
+
 
 ---
 
@@ -33,7 +52,36 @@ same as [ping but round off
 this can let play a dice game with bot 
 ### [sub
 this can show some good youtube channel to subscribe
+### [help 
+this can show you all the codes
+### [test
+this can send you message thst you type
+### [dectobin
+this can help you change a decimal number to binary number 
+the answer will have **0b** at front , pls etlnor them (feel free to help me pls ;-;)
+### [dectohex
+this can help you change a decimal number to hex number
+the answer will have **0x** at front , pls etlnor them (feel free to help me pls ;-;)
 
+---
+
+## coming function
+
+---
+
+### new version will be released in this week , stay tune to know immediately 
+i am working on some new command (if i don't being lazy and go to make games)
+Here is some new command (**still in developing**)
+### [youtube
+to help you youtube search
+### [stock
+to help you check stock(**haven't start make**) 
+### [bintohex , [dectobin , [hextodec
+same as [dectohex and [dectobin
+### [team 
+teaming function(**haven't start make**)
+### bug function 
+if you use command wrong , it will appear and tell you the mistake (**haven't start make**)
 ---
 
 ## Helpers 
@@ -43,4 +91,4 @@ this can show some good youtube channel to subscribe
 ### JamieHoSzeYu
 solve the techi problem 
 
-# enjoy using my bot , byebye~~
+# enjoy using my bot , byebye~~0
